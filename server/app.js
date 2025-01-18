@@ -30,7 +30,7 @@ app.use(express.urlencoded({ extended: true }));
 const PORT = process.env.PORT;
 connectDataBase().then(() => {
   app.listen(PORT, () => {
-    console.log("http:localhost:4444");
+    console.log("server start on port" , process.env.PORT);
   });
 });
 
