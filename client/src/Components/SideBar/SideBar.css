@@ -1,0 +1,24 @@
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #c7c0c0;
+    border-radius: 10px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: hwb(0 86% 14%);
+  }
+  
+  .active-link {
+    background-color: #4a5568; /* Example active link background color */
+    color: #f8b400; /* Example active link text color */
+  }
+  
