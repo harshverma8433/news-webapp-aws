@@ -11,11 +11,12 @@ dotenv.config({ path: "./.env" });
 
 const _dirname = path.dirname("");
 const buildpath = path.join(_dirname, "../client/dist");
+
 app.use(express.static(buildpath));
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "*",
     credentials: true,
   })
 );
