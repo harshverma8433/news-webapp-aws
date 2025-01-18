@@ -28,6 +28,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 const PORT = process.env.PORT;
+console.log(PORT);
+
 connectDataBase().then(() => {
   app.listen(PORT, () => {
     console.log("server start on port" , process.env.PORT);
